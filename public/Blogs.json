@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "cover": "https://i.ibb.co.com/8xxBShb/cover1.jpg",
+      "title": "The Rise of Tech Giants",
+      "author": "Jane Doe",
+      "author_img": "https://i.ibb.co.com/0Cv84dR/template-0.jpg",
+      "posted_date": "2024-08-15",
+      "reading_time": 5,
+      "hashtag": ["#Tech", "#Giants", "#Innovation"]
+    },
+    {
+      "id": 2,
+      "cover": "https://i.ibb.co.com/8KBY8L5/greg-rakozy-o-Mp-Az-DN-9-I-unsplash.jpg",
+      "title": "Unlocking AI's Potential",
+      "author": "John Smith",
+      "author_img": "https://i.ibb.co.com/5TJj2bt/cool-neon-blue-profile-picture-u9y9ydo971k9mdcf.jpg",
+      "posted_date": "2024-09-02",
+      "reading_time": 8,
+      "hashtag": ["#AI", "#MachineLearning", "#Future"]
+    },
+    {
+      "id": 3,
+      "cover": "https://i.ibb.co.com/hySfnDL/sasha-freemind-n-Xo2-Zs-KHTHg-unsplash.jpg",
+      "title": "A Guide to Remote Work",
+      "author": "Emily Brown",
+      "author_img": "https://i.ibb.co.com/cQr6JTg/instagram-profile-picture-maker.jpg",
+      "posted_date": "2024-07-20",
+      "reading_time": 6,
+      "hashtag": ["#RemoteWork", "#WorkFromHome", "#Productivity"]
+    },
+    {
+      "id": 4,
+      "cover": "https://i.ibb.co.com/QjDhcKj/simon-berger-twuk-N12-EN7c-unsplash.jpg",
+      "title": "The Future of Blockchain",
+      "author": "Michael Green",
+      "author_img": "https://i.ibb.co.com/3F6DwXR/e2f853f8232acad78bf143c32f2f3a04.jpg",
+      "posted_date": "2024-10-01",
+      "reading_time": 7,
+      "hashtag": ["#Blockchain", "#Cryptocurrency", "#DeFi"]
+    },
+    {
+      "id": 5,
+      "cover": "https://i.ibb.co.com/6Xtmzhh/jason-leung-Xaanw0s0p-Mk-unsplash.jpg",
+      "title": "Cybersecurity in 2024",
+      "author": "Sophia Lee",
+      "author_img": "https://i.ibb.co.com/PCZssFS/25786134576ce0344893b33a051160b1.jpg",
+      "posted_date": "2024-08-30",
+      "reading_time": 4,
+      "hashtag": ["#Cybersecurity", "#InfoSec", "#2024"]
+    }
+  ]
+  

@@ -11,6 +11,8 @@ function App() {
 
     let [bookmark,setBookmark]= useState([])
 
+    let [readingTime,setReadingTime]=useState(0)
+
 
     let handleBookmark=(blog)=>{
 
@@ -19,13 +21,23 @@ function App() {
 
     }
 
+    let handleReadingTime=(Time,id)=>{
+
+    
+      setReadingTime(readingTime+Time)
+
+      let remove= bookmark.filter(reading=>reading.id !== id)
+
+      setBookmark(remove)
+    }
+
   return (
     <div className='mx-auto'>
       
       <Header></Header>
       <div className='md:flex gap-7'>
-        <Blogs handleBookmark={handleBookmark}></Blogs>
-        <Bookmarks bookmark={bookmark}></Bookmarks>
+        <Blogs handleBookmark={handleBookmark} handleReadingTime={handleReadingTime}></Blogs>
+        <Bookmarks bookmark={bookmark} readingTime={readingTime}></Bookmarks>
       </div>
      
     </div>

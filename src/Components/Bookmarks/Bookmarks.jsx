@@ -2,10 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Bookmark from '../Bookmark/Bookmark';
 
-const Bookmarks = ({bookmark}) => {
+const Bookmarks = ({bookmark,readingTime}) => {
     return (
         <div>
             <div className='bg-gray-300 rounded-lg p-2'>
+
+            <h2 className='text-5xl font-bold text-center'>Reading Time:{readingTime}</h2>
+
             <h2 className='text-3xl font-bold text-center'>BookMarks Blogs:{bookmark.length}</h2>
             {
                bookmark.map(bookmark=><Bookmark key={bookmark.id} bookmark={bookmark}></Bookmark>)

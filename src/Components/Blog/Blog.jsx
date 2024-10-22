@@ -6,9 +6,9 @@ import { CiBookmark } from "react-icons/ci";
 
 
 
-const Blog = ({ blog,handleBookmark }) => {
+const Blog = ({ blog,handleBookmark,handleReadingTime}) => {
 
-    let {cover,title,author,author_img,posted_date,reading_time,hashtag}= blog
+    let {id,cover,title,author,author_img,posted_date,reading_time,hashtag}= blog
 
     console.log(blog)
     return (
@@ -47,6 +47,8 @@ const Blog = ({ blog,handleBookmark }) => {
                 <p>{hashtag[0]}</p>
                  <p> {hashtag[1]}</p>
             </div>
+
+            <button onClick={()=>handleReadingTime(blog.reading_time,id)} className='btn btn-warning mt-5'>Marks As read</button>
 
            
             

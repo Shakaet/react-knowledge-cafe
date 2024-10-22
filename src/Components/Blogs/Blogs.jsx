@@ -22,6 +22,8 @@ const Blogs = ({handleBookmark,handleReadingTime}) => {
                 blogs.map(item=><Blog key={item.id} blog={item} handleBookmark={handleBookmark}handleReadingTime={handleReadingTime}></Blog>)
             }
 
+          
+
             
             
         </div>

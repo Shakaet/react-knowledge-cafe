@@ -3,10 +3,12 @@ import React from 'react';
 
 import PropTypes from 'prop-types'; 
 import { CiBookmark } from "react-icons/ci";
+import './blog.css'
 
 
 
-const Blog = ({ blog,handleBookmark,handleReadingTime}) => {
+const Blog = ({ blog,handleBookmark,handleReadingTime,handleActiveBtn,activebtn}) => {
+  
 
     let {id,cover,title,author,author_img,posted_date,reading_time,hashtag}= blog
 
@@ -49,6 +51,20 @@ const Blog = ({ blog,handleBookmark,handleReadingTime}) => {
             </div>
 
             <button onClick={()=>handleReadingTime(blog.reading_time,id)} className='btn btn-warning mt-5'>Marks As read</button>
+
+            <button
+        onClick={() => handleActiveBtn("true")}
+        className={`${activebtn ? "bg-blue-500 text-white" : "bg-gray-300 text-black"} px-4 py-2 rounded`}
+      >
+        True
+      </button>
+
+      <button
+        onClick={() => handleActiveBtn("false")}
+        className={`${!activebtn ? "bg-blue-500 text-white" : "bg-gray-300 text-black"} px-4 py-2 rounded`}
+      >
+        False
+      </button>
 
            
             

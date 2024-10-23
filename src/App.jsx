@@ -17,6 +17,24 @@ function App() {
     let [pass,setPass]=useState([])
 
 
+    let [activebtn,setActivebtn] = useState(true)
+
+    let handleActiveBtn=(states)=>{
+
+      if(states==="true"){
+        setActivebtn(true)
+      }
+      else{
+        setActivebtn(false)
+      }
+        
+
+      
+
+    }
+    
+
+
 
 
     let handlePass=(id)=>{
@@ -68,7 +86,7 @@ function App() {
       
       <Header></Header>
       <div className='md:flex gap-7'>
-        <Blogs handleBookmark={handleBookmark} handleReadingTime={handleReadingTime}></Blogs>
+        <Blogs handleBookmark={handleBookmark} handleReadingTime={handleReadingTime} handleActiveBtn={handleActiveBtn}activebtn={activebtn}></Blogs>
         <Bookmarks bookmark={bookmark} readingTime={readingTime} handlePass={handlePass}pass={pass}></Bookmarks>
         
       </div>
